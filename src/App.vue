@@ -1,18 +1,21 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    <a href="/" target="_blank">
+      <img src="/logo.png" class="logo" />
     </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    <a href="https://hayfrp.org" target="_blank">
+      <img src="/hayfrp.png" class="logo hay" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <h2>Ice Link Net 前 HayFrp</h2>
+
+  <button type="button" @click="win.open('https://hayfrp.rivfox.com')">控制台</button> <button type="button" @click="win.open('https://hayfrp.org')">HayFrp</button>
 </template>
+
+<script setup lang="ts">
+const win = window;
+</script>
+
 
 <style scoped>
 .logo {
@@ -22,9 +25,9 @@ import HelloWorld from './components/HelloWorld.vue'
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #B0C4DE);
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.logo.hay:hover {
+  filter: drop-shadow(0 0 2em	#FA8072);
 }
 </style>
